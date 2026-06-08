@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Go-Pong</title>
+    <style>
+        /* Flex-direction column aligns the score above the canvas */
+        body { 
+            background: #222; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            color: white; 
+            font-family: 'Courier New', Courier, monospace;
+        }
+        canvas { border: 2px solid #fff; background: #000; }
+        .scoreboard { font-size: 48px; margin: 20px; }
+    </style>
+</head>
+<body>
+
+    <!-- This is the new part for the scores -->
+    <div class="scoreboard">
+        <span id="p1-score">0</span> : <span id="p2-score">0</span>
+    </div>
+
+    <canvas id="game" width="800" height="400"></canvas>
+    
+    <script src="game.js"></script>
+</body>
+</html>
